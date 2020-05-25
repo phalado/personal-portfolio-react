@@ -97,12 +97,12 @@ const NavbarStyles = ({
   },
   socialEmailTitle: {
     textAlign: 'center',
-    fontSize: '1.25rem',
+    fontSize: '1.5rem',
     lineHeight: 1,
   },
   socialEmail: {
     textAlign: 'center',
-    fontSize: '1.25rem',
+    fontSize: '1.7rem',
     lineHeight: 1,
     paddingBottom: '2rem',
   },

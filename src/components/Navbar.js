@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react';
-import styles from '../styles/NavbarStyles';
 import Links from '../helpers/Links';
 import NavbarIcon from './NavbarIcon';
+import styles from '../styles/NavbarStyles';
 
 const Navbar = () => (
   <nav style={styles.container}>
