@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from '../styles/MainHeaderStyles';
+import styles from '../styles/HomeHeaderStyles';
 
-const MainHeader = () => (
+const HomeHeader = () => (
   <header style={styles.container}>
     <h1 style={styles.title}>About my portfolio:</h1>
     <p style={styles.paragraphs}>
@@ -19,9 +19,10 @@ const MainHeader = () => (
       <span style={styles.span}>Some of my skills: </span>
       React, Redux, React Native, JavaScript ES6, Ruby, Ruby on Rails, HTML, CSS/SCSS, Phaser 3,
       Webpack, Jest, APIs, Bootstrap, SQLite, RSpec, Capybara, Git, GitHub, Webpack, Heroku,
-      Netlify, Amazon S3, Omniauth, Python, Lucid chart, Devise, Minitest, PostgreSQL, Remote Work, Pair Programming
+      Netlify, Amazon S3, Omniauth, Python, Lucid chart, Devise, Minitest, PostgreSQL,
+      Remote Work, Pair Programming
     </p>
   </header>
 );
 
-export default MainHeader;
+export default HomeHeader;

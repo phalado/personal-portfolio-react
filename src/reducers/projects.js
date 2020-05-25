@@ -3,7 +3,13 @@ const projects = (state = [], action) => {
     case 'ADD_PROJECT':
       return ([...state,
         {
-          action,
+          id: action.project.id,
+          name: action.project.name,
+          language: action.project.language,
+          live: action.project.live,
+          repo: action.project.repo,
+          image: action.project.image,
+          description: action.project.description,
         }]);
     default:
       return state;

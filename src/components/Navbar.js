@@ -54,6 +54,7 @@ const Navbar = () => (
         <a
           href={Links.microverse}
           target="_blank"
+          rel="noopener noreferrer"
           style={{ color: 'white' }}
         >
           Microverse

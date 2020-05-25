@@ -1,9 +1,9 @@
-const MainHeaderStyles = ({
+const HomeHeaderStyles = ({
   container: {
     backgroundColor: '#637aa6',
     color: 'white',
     width: '100%',
-    maxWidth: '98%',
+    maxHeight: '20%',
     margin: 0,
     borderRadius: '10px',
   },
@@ -12,11 +12,11 @@ const MainHeaderStyles = ({
     fontSize: '2rem',
     fontWeight: 'bold',
     margin: 0,
-    paddingTop: 20,
-    paddingBottom: 20,
+    paddingTop: '1rem',
+    paddingBottom: '0.25rem',
   },
   paragraphs: {
-    paddingBottom: '2rem',
+    paddingBottom: '0.75rem',
     paddingLeft: '2rem',
     paddingRight: '2rem',
     lineHeight: 1.2,
@@ -28,4 +28,4 @@ const MainHeaderStyles = ({
   },
 });
 
-export default MainHeaderStyles;
+export default HomeHeaderStyles;
