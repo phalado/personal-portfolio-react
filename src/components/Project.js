@@ -15,6 +15,7 @@ const Project = props => {
       <h3>{project.repo}</h3>
       <h3>{project.live}</h3>
       <p>{project.description[0]}</p>
+      <img src={project.image} alt={project.name} />
     </div>
   );
 };
