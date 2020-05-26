@@ -12,16 +12,14 @@ const NavbarIcon = props => {
   };
 
   return (
-    <li>
-      <a href={link} target="_blank" rel="noopener noreferrer">
-        <input
-          onMouseOver={() => handleMouse(styleHover)}
-          onMouseLeave={() => handleMouse(styleGrey)}
-          style={button}
-          type="button"
-        />
-      </a>
-    </li>
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      <input
+        onMouseOver={() => handleMouse(styleHover)}
+        onMouseLeave={() => handleMouse(styleGrey)}
+        style={button}
+        type="button"
+      />
+    </a>
   );
 };
 

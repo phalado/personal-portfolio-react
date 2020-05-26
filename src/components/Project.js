@@ -1,21 +1,41 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import getProjects from '../constants/projects';
+import NavbarIcon from './NavbarIcon';
+import styles from '../styles/ProjectStyles';
 
 const Project = props => {
-  const { projects, index, changeIndex } = props;
+  let { projects } = props;
+  const { index, changeIndex } = props;
   const { id } = useParams();
+  if (projects.length === 0) {
+    projects = getProjects;
+  }
   const project = projects.find(proj => proj.id === parseInt(id, 10));
 
   return (
-    <div>
-      <h1>{project.id}</h1>
-      <h1>{project.name}</h1>
-      <h2>{project.language}</h2>
-      <h3>{project.repo}</h3>
-      <h3>{project.live}</h3>
-      <p>{project.description[0]}</p>
-      <img src={project.image} alt={project.name} />
+    <div style={styles.container}>
+      <h1 style={styles.title}>
+        <a
+          href={project.live}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={styles.link}
+        >
+          {project.name}
+        </a>
+        <p style={{ padding: '0 1rem' }}> - </p>
+        <NavbarIcon
+          link={project.repo}
+          styleGrey={styles.githubIcon}
+          styleHover={styles.githubIconHover}
+        />
+      </h1>
+      {project.description.map(paragraph => (
+        <p style={styles.description} key={paragraph}>{paragraph}</p>
+      ))}
+      <img src={project.image} alt={project.name} style={styles.image} />
     </div>
   );
 };

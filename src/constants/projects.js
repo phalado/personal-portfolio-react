@@ -168,6 +168,17 @@ const projects = [
     ],
     image: '../contents/projects/berk.png',
   },
+  {
+    id: 15,
+    name: 'Mobile Calculator',
+    language: 'native',
+    live: 'No live version',
+    repo: 'https://github.com/phalado/mobileCalculator',
+    description: [
+      'A simple calculator for android made with React Native',
+    ],
+    image: '../contents/projects/mobile-calc.png',
+  },
 ];
 
 export default projects;

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Project from '../components/Project';
-import { changeProjectIndex } from '../actions';
+import { changeProjectIndex, addProject } from '../actions';
 
 const mapStateToProps = state => ({
   projects: state.projects,
@@ -10,6 +10,9 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   changeIndex: index => {
     dispatch(changeProjectIndex(index));
+  },
+  addProject: proj => {
+    dispatch(addProject(proj));
   },
 });
 
