@@ -25,7 +25,7 @@ const ProjectStyles = ({
     margin: '0 5rem 2rem',
   },
   image: {
-    width: '95%',
+    maxWidth: '95%',
     marginBottom: '1rem',
   },
   githubIcon: {
@@ -36,6 +36,22 @@ const ProjectStyles = ({
     backgroundImage: "url('/contents/githubHover.svg')",
     backgroundPosition: 'center',
     cursor: 'pointer',
+  },
+  arrows: {
+    backgroundPosition: 'center',
+    border: '0',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'contain',
+    padding: '2rem',
+    margin: '0.5rem',
+    backgroundColor: 'transparent',
+    cursor: 'pointer',
+  },
+  arrowLeft: {
+    backgroundImage: "url('/contents/angle-left.svg')",
+  },
+  arrowRight: {
+    backgroundImage: "url('/contents/angle-right.svg')",
   },
 });
 
