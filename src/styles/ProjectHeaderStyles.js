@@ -1,18 +1,18 @@
 const HomeHeaderStyles = ({
   container: {
-    backgroundColor: '#637aa6',
-    color: 'white',
+    color: '#333',
     width: '100%',
     maxHeight: '20%',
     margin: 0,
     borderRadius: '10px',
     display: 'flex',
     placeContent: 'space-between',
+    background: 'transparent',
   },
   button: {
     border: 'none',
     height: '8rem',
-    backgroundColor: 'white',
+    background: 'transparent',
     borderRadius: 10,
     margin: 10,
     cursor: 'pointer',

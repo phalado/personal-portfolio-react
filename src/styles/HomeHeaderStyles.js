@@ -16,7 +16,7 @@ const HomeHeaderStyles = ({
     paddingBottom: '0.25rem',
   },
   paragraphs: {
-    paddingBottom: '0.75rem',
+    paddingBottom: '1.5rem',
     paddingLeft: '2rem',
     paddingRight: '2rem',
     lineHeight: 1.2,

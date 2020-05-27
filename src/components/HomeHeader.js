@@ -18,7 +18,7 @@ const HomeHeader = () => (
     <p style={styles.paragraphs}>
       <span style={styles.span}>Some of my skills: </span>
       React, Redux, React Native, JavaScript ES6, Ruby, Ruby on Rails, HTML, CSS/SCSS, Phaser 3,
-      Webpack, Jest, APIs, Bootstrap, SQLite, RSpec, Capybara, Git, GitHub, Webpack, Heroku,
+      Jest, APIs, Bootstrap, SQLite, RSpec, Capybara, Git, GitHub, Webpack, Heroku,
       Netlify, Amazon S3, Omniauth, Python, Lucid chart, Devise, Minitest, PostgreSQL,
       Remote Work, Pair Programming
     </p>

@@ -42,21 +42,21 @@ const NavbarStyles = ({
     color: 'white',
   },
   social: {
-    backgroundImage: 'radial-gradient(grey, black)',
     margin: '1.5rem',
     padding: '0.5rem 1,25rem',
     borderRadius: '20px',
   },
   socialVisit: {
     textAlign: 'center',
-    fontSize: '1.25rem',
+    fontSize: '2rem',
     lineHeight: 1,
     paddingTop: '2rem',
+    marginBottom: 0,
   },
   socialUL: {
     display: 'flex',
     justifyContent: 'space-around',
-    padding: '2rem 0',
+    padding: '0 0 2rem 0',
     listStyle: 'none',
   },
   aboutIcon: {
@@ -97,14 +97,16 @@ const NavbarStyles = ({
   },
   socialEmailTitle: {
     textAlign: 'center',
-    fontSize: '1.5rem',
+    fontSize: '2rem',
     lineHeight: 1,
+    marginTop: 0,
   },
   socialEmail: {
     textAlign: 'center',
     fontSize: '1.7rem',
     lineHeight: 1,
     paddingBottom: '2rem',
+    marginTop: 0,
   },
 });
 
