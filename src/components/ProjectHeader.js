@@ -16,6 +16,13 @@ const ProjectHeader = props => {
 
   return (
     <header style={styles.container}>
+      <button type="button" style={styles.button} onClick={() => history.push('/')}>
+        <img
+          src="../contents/home.svg"
+          alt="Home button"
+          style={styles.image}
+        />
+      </button>
       <button type="button" style={styles.button} onClick={() => handleClick('react')}>
         <img
           src="../contents/react-redux.png"

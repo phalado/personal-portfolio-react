@@ -4,7 +4,9 @@ import PropTypes from 'prop-types';
 import styles from '../styles/NavbarStyles';
 
 const NavbarIcon = props => {
-  const { link, styleGrey, styleHover } = props;
+  const {
+    link, styleGrey, styleHover, big,
+  } = props;
   const [button, setButton] = useState({ ...styles.aboutIcon, ...styleGrey });
 
   const handleMouse = style => {
@@ -16,7 +18,7 @@ const NavbarIcon = props => {
       <input
         onMouseOver={() => handleMouse(styleHover)}
         onMouseLeave={() => handleMouse(styleGrey)}
-        style={button}
+        style={big ? { ...button, padding: '2rem' } : button}
         type="button"
       />
     </a>
@@ -27,6 +29,11 @@ NavbarIcon.propTypes = {
   link: PropTypes.string.isRequired,
   styleGrey: PropTypes.objectOf(PropTypes.string).isRequired,
   styleHover: PropTypes.objectOf(PropTypes.string).isRequired,
+  big: PropTypes.bool,
+};
+
+NavbarIcon.defaultProps = {
+  big: false,
 };
 
 export default NavbarIcon;

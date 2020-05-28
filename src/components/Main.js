@@ -6,6 +6,7 @@ import ProjectHeader from '../containers/ProjectHeader';
 import Project from '../containers/Project';
 import Footer from './Footer';
 import styles from '../styles/MainStyles';
+import RestaurantPage from '../projects/RestaurantPage';
 
 const Main = () => (
   <Router>
@@ -30,6 +31,9 @@ const Main = () => (
         <Route path="/project/:id">
           <ProjectHeader />
           <Project />
+        </Route>
+        <Route path="/restaurant">
+          <RestaurantPage />
         </Route>
       </Switch>
     </main>

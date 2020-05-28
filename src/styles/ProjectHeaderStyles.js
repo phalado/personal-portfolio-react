@@ -11,7 +11,7 @@ const HomeHeaderStyles = ({
   },
   button: {
     border: 'none',
-    height: '8rem',
+    height: '7rem',
     background: 'transparent',
     borderRadius: 10,
     margin: 10,

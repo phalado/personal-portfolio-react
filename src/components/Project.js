@@ -62,6 +62,7 @@ const Project = props => {
             link={project.repo}
             styleGrey={styles.githubIcon}
             styleHover={styles.githubIconHover}
+            big
           />
         </h1>
         {project.description.map(paragraph => (
@@ -83,9 +84,5 @@ Project.propTypes = {
   index: PropTypes.number.isRequired,
   changeIndex: PropTypes.func.isRequired,
 };
-
-// Project.defaultProps = {
-//   index: 0,
-// };
 
 export default Project;
