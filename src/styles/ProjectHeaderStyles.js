@@ -16,9 +16,11 @@ const HomeHeaderStyles = ({
     borderRadius: 10,
     margin: 10,
     cursor: 'pointer',
+    maxWidth: '10%',
   },
   image: {
     height: '100%',
+    width: '100%',
   },
 });
 

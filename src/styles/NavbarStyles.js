@@ -16,7 +16,7 @@ const NavbarStyles = ({
     display: 'block',
   },
   whatAmI: {
-    padding: '1.25rem 4rem 1.25rem',
+    padding: '1.25rem 2rem',
   },
   wai: {
     display: 'inline-grid',
