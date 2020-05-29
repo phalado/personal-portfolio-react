@@ -6,21 +6,20 @@ const HomeHeaderStyles = ({
     margin: 0,
     borderRadius: '10px',
     display: 'flex',
-    placeContent: 'space-between',
+    placeContent: 'space-around',
     background: 'transparent',
+    flexWrap: 'wrap',
   },
   button: {
     border: 'none',
-    height: '7rem',
+    height: '5rem',
     background: 'transparent',
     borderRadius: 10,
-    margin: 10,
+    margin: 20,
     cursor: 'pointer',
-    maxWidth: '10%',
   },
   image: {
     height: '100%',
-    width: '100%',
   },
 });
 

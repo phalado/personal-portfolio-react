@@ -3,8 +3,12 @@ import styles from '../styles/FooterStyles';
 
 const Footer = () => {
   const date = new Date();
+  const { innerWidth } = window;
+  const styling = innerWidth > 1200
+    ? { ...styles.container, width: '80%' } : { ...styles.container, width: '100%' };
+
   return (
-    <footer style={styles.container}>
+    <footer style={styling}>
       <p>
         ©
         {' '}

@@ -4,9 +4,11 @@ import Links from '../helpers/Links';
 import NavbarIcon from './NavbarIcon';
 import getProjects from '../constants/projects';
 import styles from '../styles/NavbarStyles';
+import NavbarList from './NavbarList';
 
 const Navbar = props => {
   const { projects, addProject } = props;
+  const { innerWidth } = window;
 
   useEffect(() => {
     if (projects.length === 0) {
@@ -18,57 +20,57 @@ const Navbar = props => {
   }, []);
 
   return (
-    <nav style={styles.container}>
-      <h1 style={styles.myName}>Raphael Pereira Cordeiro</h1>
+    <nav style={innerWidth > 1200 ? styles.container : styles.containerSml}>
+      <h1 style={innerWidth > 1200 ? styles.myName : styles.myNameSml}>Raphael Pereira Cordeiro</h1>
       <div style={styles.aboutMe}>
         <header style={styles.whatAmI}>
           <ul style={styles.wai}>
-            <li style={styles.waiList}>FULL-STACK DEV</li>
-            <li style={styles.waiList}>WEBDESIGNER</li>
-            <li style={styles.waiList}>MASTER</li>
-            <li style={styles.waiList}>NERD</li>
-            <li style={styles.waiList}>HUSBAND</li>
-            <li style={styles.waiList}>CAT SLAVE</li>
+            <NavbarList text="FULL-STACK DEV" link="/" />
+            <NavbarList text="WEBDESIGNER" link="/" />
+            <NavbarList text="MASTER" link="/" />
+            <NavbarList text="NERD" link="/" />
+            <NavbarList text="HUSBAND" link="/" />
+            <NavbarList text="CAT SLAVE" link="/" />
           </ul>
         </header>
-        <div style={styles.social}>
-          <p style={styles.socialVisit}>Visit my social medias.</p>
-          <ul style={styles.socialUL}>
-            <li>
-              <NavbarIcon
-                link={Links.linkedin}
-                styleGrey={styles.linkedinIcon}
-                styleHover={styles.linkedinIconHover}
-              />
-            </li>
-            <li>
-              <NavbarIcon
-                link={Links.github}
-                styleGrey={styles.githubIcon}
-                styleHover={styles.githubIconHover}
-              />
-            </li>
-            <li>
-              <NavbarIcon
-                link={Links.twitter}
-                styleGrey={styles.twitterIcon}
-                styleHover={styles.twitterIconHover}
-              />
-            </li>
-            <li>
-              <NavbarIcon
-                link={Links.medium}
-                styleGrey={styles.mediumIcon}
-                styleHover={styles.mediumIconHover}
-              />
-            </li>
-          </ul>
-          <p style={styles.socialEmailTitle}>My e-mail:</p>
-          <p style={styles.socialEmail}>phalado@gmail.com</p>
-        </div>
+      </div>
+      <div style={styles.social}>
+        <p style={styles.socialVisit}>Visit my social medias.</p>
+        <ul style={styles.socialUL}>
+          <li style={{ width: '25%' }}>
+            <NavbarIcon
+              link={Links.linkedin}
+              styleGrey={styles.linkedinIcon}
+              styleHover={styles.linkedinIconHover}
+            />
+          </li>
+          <li style={{ width: '25%' }}>
+            <NavbarIcon
+              link={Links.github}
+              styleGrey={styles.githubIcon}
+              styleHover={styles.githubIconHover}
+            />
+          </li>
+          <li style={{ width: '25%' }}>
+            <NavbarIcon
+              link={Links.twitter}
+              styleGrey={styles.twitterIcon}
+              styleHover={styles.twitterIconHover}
+            />
+          </li>
+          <li style={{ width: '25%' }}>
+            <NavbarIcon
+              link={Links.medium}
+              styleGrey={styles.mediumIcon}
+              styleHover={styles.mediumIconHover}
+            />
+          </li>
+        </ul>
+        <p style={styles.socialEmailTitle}>My e-mail:</p>
+        <p style={styles.socialEmail}>phalado@gmail.com</p>
       </div>
       <div style={styles.whereAmI}>
-        <p>
+        <p style={{ margin: 0, lineHeight: 1 }}>
           Curently student at
           {' '}
           <a

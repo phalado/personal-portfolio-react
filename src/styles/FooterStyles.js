@@ -6,7 +6,6 @@ const FooterStyles = ({
     display: 'flex',
     color: 'white',
     height: '60px',
-    width: '80%',
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 10,

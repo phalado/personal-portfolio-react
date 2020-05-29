@@ -14,7 +14,7 @@ const NavbarIcon = props => {
   };
 
   return (
-    <a href={link} target="_blank" rel="noopener noreferrer">
+    <a href={link} target="_blank" rel="noopener noreferrer" style={!big ? { width: '100%' } : null}>
       <input
         onMouseOver={() => handleMouse(styleHover)}
         onMouseLeave={() => handleMouse(styleGrey)}
