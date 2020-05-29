@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, Route } from 'react-router-dom';
 import ReactHover from 'react-hover';
+import PropTypes from 'prop-types';
 import styles from '../styles/NavbarStyles';
 
 const NavbarList = props => {
@@ -28,6 +29,11 @@ const NavbarList = props => {
       </ReactHover>
     </li>
   );
+};
+
+NavbarList.propTypes = {
+  text: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
 };
 
 export default NavbarList;
