@@ -15,19 +15,31 @@ const NavbarStyles = ({
     backgroundColor: '#3e588c',
     color: 'white',
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'column',
     borderRadius: 10,
     alignItems: 'center',
     marginBottom: 10,
+    flexWrap: 'wrap',
+    justifyContent: 'center',
   },
   myName: {
     textAlign: 'center',
     fontSize: '2rem',
     margin: '1.5rem 1.5rem',
   },
+  abtSclContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    flexGrow: 3,
+  },
+  abtSclContainerSml: {
+    display: 'flex',
+    flexDirection: 'row',
+    flexGrow: 3,
+  },
   aboutMe: {
     display: 'block',
-    flexGrow: 4,
+    flexGrow: 3,
   },
   whatAmI: {
     padding: '1rem 2rem',
