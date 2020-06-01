@@ -18,6 +18,7 @@ const HomeSelectStyles = ({
   button: {
     border: 'none',
     height: '10rem',
+    maxWidth: '100%',
     background: 'transparent',
     borderRadius: 10,
     margin: 10,
