@@ -24,7 +24,11 @@ const NavbarList = props => {
           </Route>
         </ReactHover.Trigger>
         <ReactHover.Hover type="hover">
-          <div style={styles.hoverBox}><p>Go back to Homepage!</p></div>
+          <div style={styles.hoverBox}>
+            <p>
+              {text === 'FULL-STACK DEV' ? 'Go back to Homepage!' : text}
+            </p>
+          </div>
         </ReactHover.Hover>
       </ReactHover>
     </li>

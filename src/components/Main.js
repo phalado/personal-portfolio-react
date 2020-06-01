@@ -4,6 +4,9 @@ import HomeHeader from './HomeHeader';
 import HomeSelect from '../containers/HomeSelect';
 import ProjectHeader from '../containers/ProjectHeader';
 import Project from '../containers/Project';
+import CatSlavePage from '../aboutPages/CatSlavePage';
+import HusbandPage from '../aboutPages/HusbandPage';
+import ChristianPage from '../aboutPages/ChristianPage';
 import Footer from './Footer';
 import styles from '../styles/MainStyles';
 
@@ -48,6 +51,15 @@ const Main = () => {
           <Route path="/project/:id">
             <ProjectHeader />
             <Project />
+          </Route>
+          <Route path="/cat-slave">
+            <CatSlavePage />
+          </Route>
+          <Route path="/husband">
+            <HusbandPage />
+          </Route>
+          <Route path="/christian">
+            <ChristianPage />
           </Route>
         </Switch>
       </main>

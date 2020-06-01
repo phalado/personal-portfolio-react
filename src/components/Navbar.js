@@ -48,11 +48,11 @@ const Navbar = props => {
           <header style={styles.whatAmI}>
             <ul style={styles.wai}>
               <NavbarList text="FULL-STACK DEV" link="/" />
-              <NavbarList text="WEBDESIGNER" link="/" />
               <NavbarList text="MASTER" link="/" />
               <NavbarList text="NERD" link="/" />
-              <NavbarList text="HUSBAND" link="/" />
-              <NavbarList text="CAT SLAVE" link="/" />
+              <NavbarList text="HUSBAND" link="/husband" />
+              <NavbarList text="CAT SLAVE" link="/cat-slave" />
+              <NavbarList text="CHRISTIAN" link="/christian" />
             </ul>
           </header>
         </div>
