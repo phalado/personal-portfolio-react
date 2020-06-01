@@ -64,7 +64,7 @@ const HomeSelect = props => {
 };
 
 HomeSelect.propTypes = {
-  projects: PropTypes.objectOf(PropTypes.array).isRequired,
+  projects: PropTypes.arrayOf(PropTypes.object).isRequired,
   filterLang: PropTypes.func.isRequired,
   changeIndex: PropTypes.func.isRequired,
 };

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import HomeHeader from './HomeHeader';
 import HomeSelect from '../containers/HomeSelect';
@@ -8,11 +8,26 @@ import Footer from './Footer';
 import styles from '../styles/MainStyles';
 
 const Main = () => {
-  const { innerWidth } = window;
+  const [pageStyle, setPageStyle] = useState(styles.container);
+
+  useLayoutEffect(() => {
+    const updateSize = () => {
+      const { innerWidth } = window;
+      if (innerWidth > 1200) {
+        setPageStyle(styles.container);
+      } else {
+        setPageStyle(styles.containerSml);
+      }
+    };
+
+    window.addEventListener('resize', updateSize);
+    updateSize();
+    return () => window.removeEventListener('resize', updateSize);
+  });
 
   return (
     <div>
-      <main style={innerWidth > 1200 ? styles.container : styles.containerSml}>
+      <main style={pageStyle}>
         <Switch>
           <Route exact path="/">
             <HomeHeader />

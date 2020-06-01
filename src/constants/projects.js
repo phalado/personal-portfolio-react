@@ -143,7 +143,7 @@ const projects = [
     repo: 'https://github.com/phalado/final-capstone',
     description: [
       'This was my final capstone project for Microverse and the most complete one.',
-      'The project\'s goal was to create a book of appointment. I choose to create a dragon flying academy based on the characters of How to Train Your Dragon.',
+      'The project\'s goal was to create a book of appointment. I chose to create a dragon flying academy based on the characters of How to Train Your Dragon.',
       'The back-end is a RESTful API done with Ruby on Rails and the front-end was done with React and Redux.',
     ],
     image: '../contents/projects/berk.png',
@@ -156,7 +156,7 @@ const projects = [
     repo: 'https://github.com/phalado/React-Redux-Capstone',
     description: [
       'For this project, I hacked Batman\'s computer and got some data from the main heroes and villains. You can\'t be the Dark Knight if you are not prepared for each hero or villain.',
-      'This project\'s goal was to build a browsable list of items that you can filter and access to the details of one item. The list should be accessed from an API, so I choose the Superhero API and filtered it to store only the DC Comic\'s characters.',
+      'This project\'s goal was to build a browsable list of items that you can filter and access to the details of one item. The list should be accessed from an API, so I chose the Superhero API and filtered it to store only the DC Comic\'s characters.',
       'I used React and Redux to divide the characters by affiliation, and alignment.',
     ],
     image: '../contents/projects/batcomputer.png',

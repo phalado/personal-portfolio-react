@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, useLayoutEffect } from 'react';
 import PropTypes from 'prop-types';
 import Links from '../helpers/Links';
 import NavbarIcon from './NavbarIcon';
@@ -8,7 +8,8 @@ import NavbarList from './NavbarList';
 
 const Navbar = props => {
   const { projects, addProject } = props;
-  const { innerWidth } = window;
+  const [pageStyle, setPageStyle] = useState(styles.container);
+  const [iconStyle, setIconStyle] = useState(styles.iconList);
 
   useEffect(() => {
     if (projects.length === 0) {
@@ -19,9 +20,26 @@ const Navbar = props => {
     // eslint-disable-next-line
   }, []);
 
+  useLayoutEffect(() => {
+    const updateSize = () => {
+      const { innerWidth } = window;
+      if (innerWidth > 1200) {
+        setPageStyle(styles.container);
+        setIconStyle(styles.iconList);
+      } else {
+        setPageStyle(styles.containerSml);
+        setIconStyle(styles.iconListSml);
+      }
+    };
+
+    window.addEventListener('resize', updateSize);
+    updateSize();
+    return () => window.removeEventListener('resize', updateSize);
+  });
+
   return (
-    <nav style={innerWidth > 1200 ? styles.container : styles.containerSml}>
-      <h1 style={innerWidth > 1200 ? styles.myName : styles.myNameSml}>Raphael Pereira Cordeiro</h1>
+    <nav style={pageStyle}>
+      <h1 style={styles.myName}>Raphael Pereira Cordeiro</h1>
       <div style={styles.aboutMe}>
         <header style={styles.whatAmI}>
           <ul style={styles.wai}>
@@ -35,30 +53,29 @@ const Navbar = props => {
         </header>
       </div>
       <div style={styles.social}>
-        <p style={styles.socialVisit}>Visit my social medias.</p>
         <ul style={styles.socialUL}>
-          <li style={{ width: '25%' }}>
+          <li style={iconStyle}>
             <NavbarIcon
               link={Links.linkedin}
               styleGrey={styles.linkedinIcon}
               styleHover={styles.linkedinIconHover}
             />
           </li>
-          <li style={{ width: '25%' }}>
+          <li style={iconStyle}>
             <NavbarIcon
               link={Links.github}
               styleGrey={styles.githubIcon}
               styleHover={styles.githubIconHover}
             />
           </li>
-          <li style={{ width: '25%' }}>
+          <li style={iconStyle}>
             <NavbarIcon
               link={Links.twitter}
               styleGrey={styles.twitterIcon}
               styleHover={styles.twitterIconHover}
             />
           </li>
-          <li style={{ width: '25%' }}>
+          <li style={iconStyle}>
             <NavbarIcon
               link={Links.medium}
               styleGrey={styles.mediumIcon}
@@ -66,7 +83,6 @@ const Navbar = props => {
             />
           </li>
         </ul>
-        <p style={styles.socialEmailTitle}>My e-mail:</p>
         <p style={styles.socialEmail}>phalado@gmail.com</p>
       </div>
       <div style={styles.whereAmI}>

@@ -22,14 +22,12 @@ const NavbarStyles = ({
   },
   myName: {
     textAlign: 'center',
-  },
-  myNameSml: {
-    textAlign: 'center',
     fontSize: '2rem',
+    margin: '1.5rem 1.5rem',
   },
   aboutMe: {
     display: 'block',
-    flexGrow: 5,
+    flexGrow: 4,
   },
   whatAmI: {
     padding: '1rem 2rem',
@@ -55,6 +53,7 @@ const NavbarStyles = ({
   },
   list: {
     listStyle: 'none',
+    textAlign: 'center',
   },
   waiList: {
     lineHeight: 1.3,
@@ -81,13 +80,6 @@ const NavbarStyles = ({
     flexDirection: 'column',
     flexGrow: 2,
   },
-  socialVisit: {
-    textAlign: 'center',
-    fontSize: '2rem',
-    lineHeight: 1,
-    margin: 0,
-    flexGrow: 1,
-  },
   socialUL: {
     display: 'flex',
     justifyContent: 'space-around',
@@ -95,6 +87,17 @@ const NavbarStyles = ({
     margin: '1rem 0',
     listStyle: 'none',
     flexGrow: 2,
+    flexWrap: 'wrap',
+  },
+  iconList: {
+    width: '25%',
+  },
+  iconListSml: {
+    width: '4rem',
+    minWidth: '50%',
+    height: '3rem',
+    maxHeight: '4rem',
+    textAlign: 'center',
   },
   aboutIcon: {
     border: '0',
@@ -103,7 +106,7 @@ const NavbarStyles = ({
     backgroundColor: 'transparent',
     backgroundPositionX: 'center',
     height: '100%',
-    width: '100%',
+    width: '70%',
   },
   linkedinIcon: {
     backgroundImage: "url('/contents/linkedin.svg')",
@@ -132,13 +135,6 @@ const NavbarStyles = ({
   mediumIconHover: {
     backgroundImage: "url('/contents/mediumHover.svg')",
     cursor: 'pointer',
-  },
-  socialEmailTitle: {
-    textAlign: 'center',
-    fontSize: '2rem',
-    lineHeight: 1,
-    margin: 0,
-    flexGrow: 1,
   },
   socialEmail: {
     textAlign: 'center',
