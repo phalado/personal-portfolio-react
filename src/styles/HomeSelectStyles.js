@@ -27,6 +27,7 @@ const HomeSelectStyles = ({
   },
   image: {
     height: '100%',
+    maxWidth: '100%',
   },
 });
 

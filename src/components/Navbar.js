@@ -28,6 +28,10 @@ const Navbar = props => {
         setPageStyle(styles.container);
         setIconStyle(styles.iconList);
         setMidContainer(styles.abtSclContainer);
+      } else if (innerWidth < 420) {
+        setPageStyle(styles.containerSml);
+        setIconStyle(styles.iconListSml);
+        setMidContainer(styles.abtSclContainerSmler);
       } else {
         setPageStyle(styles.containerSml);
         setIconStyle(styles.iconListSml);

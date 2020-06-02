@@ -37,6 +37,12 @@ const NavbarStyles = ({
     flexDirection: 'row',
     flexGrow: 3,
   },
+  abtSclContainerSmler: {
+    display: 'flex',
+    flexDirection: 'row',
+    flexGrow: 3,
+    flexWrap: 'wrap',
+  },
   aboutMe: {
     display: 'block',
     flexGrow: 3,

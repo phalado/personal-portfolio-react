@@ -29,6 +29,5 @@ body {
 @media (max-width: 850px) {
   body {
     font-size: 9px;
-    width: fit-content;
   }
 }
