@@ -68,5 +68,4 @@ ProjectHeader.propTypes = {
   changeIndex: PropTypes.func.isRequired,
 };
 
-
 export default ProjectHeader;
