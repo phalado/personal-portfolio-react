@@ -96,7 +96,7 @@ const Navbar = props => {
       </div>
       <div style={styles.whereAmI}>
         <p style={{ margin: 0, lineHeight: 1 }}>
-          Currently Full Stack Dev at
+          Currently Full-Stack Dev at
           {' '}
           <a
             href={Links.bycoders}
