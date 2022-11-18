@@ -13,7 +13,7 @@ const Footer = () => {
         {' '}
         {date.getFullYear()}
         {' '}
-        Phalado - Made in Brazil
+        Phalado Tech - Made in Brazil
       </p>
     </footer>
   );

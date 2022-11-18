@@ -186,6 +186,18 @@ const projects = [
     ],
     image: '../contents/projects/mobile-calc.png',
   },
+  {
+    id: 16,
+    name: 'Typescript Calculator',
+    language: 'typescript',
+    live: 'https://calculator-typescript.netlify.app/',
+    repo: 'https://github.com/phalado/typescript-calculator',
+    description: [
+      'Another simple calculator, but done with TypeScript this time.',
+      'Try to divide by 0',
+    ],
+    image: '../contents/projects/calculator-typescript.png',
+  }
 ];
 
 export default projects;
