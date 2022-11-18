@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(221, 221, 221);
+};
+
+@media (max-width: 1600px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1450px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1340px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 850px) {
+  body {
+    font-size: 9px;
+  }
+}
