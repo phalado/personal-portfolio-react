@@ -1,8 +1,9 @@
 import { connect } from 'react-redux';
 import NavbarMain from '../components/Navbar/NavbarMain';
-import { addProject } from '../actions';
 import StateInterface from '../interfaces/StateInterface';
 import ProjectInterface from '../interfaces/ProjectInterface';
+
+import { addProject } from '../slicers/projectsSlicer';
 
 const mapStateToProps = (state: StateInterface) => ({
   projects: state.projects,

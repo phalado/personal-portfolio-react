@@ -23,7 +23,7 @@ const HomeSelect = ({
   };
 
   const filterButtons = (lang: string, src: string, alt: string) => (
-    <button type="button" style={styles.button} onClick={() => handleClick(lang)}>
+    <button type="button" style={styles.button} onClick={() => handleClick(lang)} key={alt}>
       <img src={src} alt={alt} style={styles.image} />
     </button>
   )

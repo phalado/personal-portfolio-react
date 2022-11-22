@@ -1,31 +1,32 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { createStore } from 'redux';
+import { createRoot } from 'react-dom/client';
+import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 
 import App from './components/App';
-import rootReducer from './reducers';
 import reportWebVitals from './reportWebVitals';
-// import StateInterface from './interfaces/StateInterface';
 
-const initialState: any = {
-  projects: [],
-  language: 'en',
-  projNumber: 0,
-};
+import projectsReducer from './slicers/projectsSlicer'
+import projNumberReducer from './slicers/projNumberSlicer'
+import languageReducer from './slicers/languageSlicer'
 
-const store = createStore(
-  rootReducer,
-  initialState
-);
+const store = configureStore({
+  reducer: {
+    projects: projectsReducer.reducer,
+    projNumber: projNumberReducer.reducer,
+    language: languageReducer.reducer,
+  }
+});
 
-ReactDOM.render(
+const container = document.getElementById("root")
+const root = createRoot(container!);
+
+root.render(
   <React.StrictMode>
     <Provider store={store}>
       <App />
     </Provider>
-  </React.StrictMode>,
-  document.getElementById('root'),
+  </React.StrictMode>
 );
 
 reportWebVitals();

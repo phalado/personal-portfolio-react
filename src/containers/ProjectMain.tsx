@@ -1,7 +1,8 @@
 import { connect } from 'react-redux';
 import ProjectMain from '../components/Project/ProjectMain';
-import { changeProjectIndex } from '../actions';
 import StateInterface from '../interfaces/StateInterface';
+
+import { changeIndex } from '../slicers/projNumberSlicer';
 
 const mapStateToProps = (state: StateInterface) => ({
   projects: state.projects,
@@ -9,7 +10,7 @@ const mapStateToProps = (state: StateInterface) => ({
 });
 
 const mapDispatchToProps = (dispatch: any) => ({
-  changeIndex: (index: number) => dispatch(changeProjectIndex(index))
+  changeIndex: (index: number) => dispatch(changeIndex(index))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProjectMain);

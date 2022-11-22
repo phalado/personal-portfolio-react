@@ -36,7 +36,7 @@ const Main = ({
   });
 
   useEffect(() => {
-    if (projects.length > 0) return;
+    if (projects.length > 1) return;
 
     getProjects.forEach(project => addProject(project));
   }, [projects, addProject]);
