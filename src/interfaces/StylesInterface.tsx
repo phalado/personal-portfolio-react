@@ -1,3 +1,26 @@
+export interface HeaderStylesInterface {
+  container: React.CSSProperties
+  image: React.CSSProperties
+  name: React.CSSProperties
+  titleContainer: React.CSSProperties
+  titleTexts: React.CSSProperties
+  iconContainer: React.CSSProperties
+  hamburguerIconContainer: React.CSSProperties
+  hamburguerIcon: React.CSSProperties
+}
+
+export interface IconStyleInterface {
+  linkedinIcon: React.CSSProperties
+  linkedinIconHover: React.CSSProperties
+  githubIcon: React.CSSProperties
+  githubIconHover: React.CSSProperties
+  twitterIcon: React.CSSProperties
+  twitterIconHover: React.CSSProperties
+  mediumIcon: React.CSSProperties
+  mediumIconHover: React.CSSProperties
+  icon: React.CSSProperties
+}
+
 export interface MainStylesInterface {
   container: React.CSSProperties;
   containerSml: React.CSSProperties
@@ -55,19 +78,9 @@ export interface NavbarStylesInterface {
   iconList: React.CSSProperties;
   iconListSml: React.CSSProperties;
   aboutIcon: React.CSSProperties;
-  linkedinIcon: React.CSSProperties;
-  linkedinIconHover: React.CSSProperties;
-  githubIcon: React.CSSProperties;
-  githubIconHover: React.CSSProperties;
-  twitterIcon: React.CSSProperties;
-  twitterIconHover: React.CSSProperties;
-  mediumIcon: React.CSSProperties;
-  mediumIconHover: React.CSSProperties;
   socialEmail: React.CSSProperties;
 }
 
 export interface FooterStylesInterface {
   container: React.CSSProperties
 }
-
-

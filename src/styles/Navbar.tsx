@@ -128,34 +128,6 @@ const NavbarStyles: NavbarStylesInterface = ({
     height: '100%',
     width: '70%',
   },
-  linkedinIcon: {
-    backgroundImage: "url('/contents/linkedin.svg')",
-  },
-  linkedinIconHover: {
-    backgroundImage: "url('/contents/linkedinHover.svg')",
-    cursor: 'pointer',
-  },
-  githubIcon: {
-    backgroundImage: "url('/contents/github.svg')",
-  },
-  githubIconHover: {
-    backgroundImage: "url('/contents/githubHover.svg')",
-    cursor: 'pointer',
-  },
-  twitterIcon: {
-    backgroundImage: "url('/contents/twitter.svg')",
-  },
-  twitterIconHover: {
-    backgroundImage: "url('/contents/twitterHover.svg')",
-    cursor: 'pointer',
-  },
-  mediumIcon: {
-    backgroundImage: "url('/contents/medium.svg')",
-  },
-  mediumIconHover: {
-    backgroundImage: "url('/contents/mediumHover.svg')",
-    cursor: 'pointer',
-  },
   socialEmail: {
     textAlign: 'center',
     fontSize: '1.4rem',

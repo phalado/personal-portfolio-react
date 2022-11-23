@@ -1,5 +1,5 @@
 import React, { useState, useLayoutEffect } from 'react';
-import Links from '../../helpers/Links';
+import Links from '../../constants/Links';
 import NavbarIcon from './NavbarIcon';
 import styles from '../../styles/Navbar';
 import NavbarList from './NavbarList';
@@ -51,7 +51,7 @@ const Navbar = ({ projects }: { projects: ProjectInterface[] }) => {
         </div>
         <div style={styles.social}>
           <ul style={styles.socialUL}>
-            <li style={iconStyle}>
+            {/* <li style={iconStyle}>
               <NavbarIcon
                 link={Links.linkedin}
                 styleGrey={styles.linkedinIcon}
@@ -78,7 +78,7 @@ const Navbar = ({ projects }: { projects: ProjectInterface[] }) => {
                 styleGrey={styles.mediumIcon}
                 styleHover={styles.mediumIconHover}
               />
-            </li>
+            </li> */}
           </ul>
           <p style={styles.socialEmail}>phalado@gmail.com</p>
         </div>

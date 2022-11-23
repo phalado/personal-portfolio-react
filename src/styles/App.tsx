@@ -1,6 +1,7 @@
 const AppStyles = ({
   container: {
-    backgroundColor: '#ddd',
+    height: '100%'
+    // backgroundColor: '#ddd',
   },
 });
 

@@ -1,5 +1,18 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
 body {
-  background-color: rgb(221, 221, 221);
+  background-color: #ccc;
+  height: 100%;
+  margin: 0;
+  overflow-y: hidden
+};
+
+#root {
+  height: 100%;
+  margin: 0;
 };
 
 @media (max-width: 1600px) {
