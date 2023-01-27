@@ -84,3 +84,17 @@ export interface NavbarStylesInterface {
 export interface FooterStylesInterface {
   container: React.CSSProperties
 }
+
+export interface TabsStylesInterface {
+  container: React.CSSProperties
+  tabList: React.CSSProperties
+  tab: React.CSSProperties
+  tabPanel: React.CSSProperties
+}
+
+export interface AboutStylesInterface {
+  container: React.CSSProperties
+  title: React.CSSProperties
+  paragraphs: React.CSSProperties
+  span: React.CSSProperties
+}
