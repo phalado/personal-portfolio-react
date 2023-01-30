@@ -4,12 +4,13 @@ const AppStyles = ({
     // backgroundColor: '#ddd',
   },
   paper: {
-    width: "80%",
+    width: "calc(80% - 40px)",
     height: "80%",
     margin: "20px auto",
-    backgroundColor: '#8ca4d4',
+    // backgroundColor: '#8ca4d4',
     borderRadius: "10px",
-    color: "#f7f7f8"
+    color: "#f7f7f8",
+    padding: "20px"
   }
 });
 

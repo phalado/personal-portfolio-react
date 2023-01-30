@@ -10,10 +10,8 @@ const Header = () => {
   return (
     <header style={styles.container}>
       <img src={images.phaladoTechIcon} style={styles.image} alt='Phalado Tech Icon' />
-      <h2 style={styles.name}>Raphael Pereira Cordeiro</h2>
       <div style={styles.titleContainer}>
-        <h1 style={styles.titleTexts}>Full-Stack Developer</h1>
-        <h1 style={styles.titleTexts}>Rails - React</h1>
+        <h1 style={styles.titleTexts}>Character Sheet</h1>
       </div>
       <div style={styles.iconContainer}>
         {mediaList.map((mediaName: string) => (
