@@ -10,10 +10,7 @@ const mapStateToProps = (state: StateInterface) => ({
 });
 
 const mapDispatchToProps = (dispatch: any) => ({
-  addProject: (project: ProjectInterface) => {
-    console.log(project)
-    return dispatch(addProject(project))
-  },
+  addProject: (project: ProjectInterface) => dispatch(addProject(project))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Main);

@@ -40,6 +40,15 @@ const IconStyle = {
     height: '100%',
     width: '70%',
   },
+  projectIcon: {
+    border: '0',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'contain',
+    backgroundColor: 'transparent',
+    backgroundPositionX: 'center',
+    height: '36px',
+    width: '35px',
+  }
 }
 
 export default IconStyle;

@@ -42,6 +42,7 @@ export interface HomeSelectStylesInterface {
 
 export interface ProjectStylesInterface {
   container: React.CSSProperties;
+  projContainer: React.CSSProperties;
   title: React.CSSProperties;
   link: React.CSSProperties;
   description: React.CSSProperties;
@@ -51,6 +52,7 @@ export interface ProjectStylesInterface {
   arrows: React.CSSProperties;
   arrowLeft: React.CSSProperties;
   arrowRight: React.CSSProperties;
+  iframe: React.CSSProperties;
 }
 
 export interface ProjectHeaderStylesInterface {
@@ -89,7 +91,6 @@ export interface TabsStylesInterface {
   container: React.CSSProperties
   tabList: React.CSSProperties
   tab: React.CSSProperties
-  tabPanel: React.CSSProperties
 }
 
 export interface AboutStylesInterface {

@@ -10,6 +10,7 @@ const projects = [
       'This is an endless runner developed using Phaser 3 framework. Here you control Luke\'s X-Wing against some of the imperial ships. The goal is to destroy as many enemy ships as you can and score high. Maybe you can erase my name from the leader board, give it a try!',
     ],
     image: '../contents/projects/sw-ss.png',
+    iframe: 'https://start-wars-shooter.netlify.app/'
   },
   {
     id: 2,
@@ -194,10 +195,54 @@ const projects = [
     repo: 'https://github.com/phalado/typescript-calculator',
     description: [
       'Another simple calculator, but done with TypeScript this time.',
-      'Try to divide by 0',
+      'Test it below - Try to divide by 0',
     ],
     image: '../contents/projects/calculator-typescript.png',
-  }
+    iframe: 'https://calculator-typescript.netlify.app/'
+  },
+  {
+    id: 17,
+    name: 'Order Book',
+    language: 'typescript',
+    live: 'https://order-book-phalado.netlify.app/',
+    repo: 'https://github.com/phalado/order_book',
+    description: [
+      'An order book based on Binance\'s',
+      'The user is able to choose two assets. After that, a live stream from Binance\'s Websocket will show the lasts bids.',
+      'The assts\' bids and asks will be updated each second.',
+      'You can test it below.'
+    ],
+    image: '',
+    iframe: 'https://order-book-phalado.netlify.app/'
+  },
+  {
+    id: 18,
+    name: 'Termo Solver',
+    language: 'rails',
+    live: 'https://termo-solver.netlify.app/',
+    repo: 'https://github.com/phalado/termo-consulta',
+    description: [
+      'A web app to help solving the Brazilian version of Wordle: Termo.',
+      'This application won\'t solve the puzzle for you. You still have to deduct the next steps. It only shows you the possible words for the answer.',
+      'This repo is the back end done using Ruby on Rails and Elasticsearch'
+    ],
+    image: '../contents/projects/termo-solver.png'
+  },
+  {
+    id: 19,
+    name: 'Termo Solver',
+    language: 'react',
+    live: 'https://termo-solver.netlify.app/',
+    repo: 'https://github.com/phalado/termo-consulta',
+    description: [
+      'A web app to help solving the Brazilian version of Wordle: Termo.',
+      'This application won\'t solve the puzzle for you. You still have to deduct the next steps. It only shows you the possible words for the answer.',
+      'This repo is the front end done using React and Typescript.',
+      'You can test it below.'
+    ],
+    image: '../contents/projects/termo-solver.png',
+    iframe: 'https://termo-solver.netlify.app/'
+  },
 ];
 
 export default projects;

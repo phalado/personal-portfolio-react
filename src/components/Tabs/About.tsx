@@ -1,10 +1,10 @@
-import { Container } from '@mui/system';
 import React from 'react';
+import { Container } from '@mui/system';
 import styles from '../../styles/About';
 
 const About = () => {
   return (
-    <Container>
+    <Container style={styles.container}>
       <h1 style={styles.title}>About my portfolio:</h1>
       <p style={styles.paragraphs}>
         I love facing new challenges. Seeing a well-done job after hours and days of work is one

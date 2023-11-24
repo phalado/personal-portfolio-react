@@ -2,12 +2,8 @@ import { AboutStylesInterface } from "../interfaces/StylesInterface";
 
 const AboutStyles: AboutStylesInterface = ({
   container: {
-    backgroundColor: '#637aa6',
-    color: 'white',
-    width: '100%',
-    maxHeight: '20%',
-    margin: 0,
-    borderRadius: '10px',
+    width: "80%",
+    marginLeft: "8%"
   },
   title: {
     textAlign: 'center',

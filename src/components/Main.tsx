@@ -1,15 +1,15 @@
 import React, { useEffect, useLayoutEffect, useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import CatSlavePage from '../aboutPages/CatSlavePage';
 import HusbandPage from '../aboutPages/HusbandPage';
 import ChristianPage from '../aboutPages/ChristianPage';
 import Footer from './Footer';
-import Home from './Home';
 import ProjectPage from './Project';
 
 import getProjects from '../constants/projects';
 import styles from '../styles/Main';
 import ProjectInterface from '../interfaces/ProjectInterface';
+import App from './App';
 
 const Main = ({
   projects,
@@ -42,18 +42,14 @@ const Main = ({
   }, [projects, addProject]);
 
   return (
-    <div>
-      <main style={pageStyle}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/project/:id" element={<ProjectPage />} />
-          <Route path="/cat-slave" element={<CatSlavePage />} />
-          <Route path="/husband" element={<HusbandPage />} />
-          <Route path="/christian" element={<ChristianPage />} />
-        </Routes>
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/cat-slave" element={<CatSlavePage />} />
+        <Route path="/husband" element={<HusbandPage />} />
+        <Route path="/christian" element={<ChristianPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

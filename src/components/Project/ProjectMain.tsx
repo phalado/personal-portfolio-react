@@ -1,56 +1,67 @@
-import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import getProjects from '../../constants/projects';
-import NavbarIcon from '../Navbar/NavbarIcon';
 import styles from '../../styles/Project';
+import iconStyles from '../../styles/Icon';
 import ProjectInterface from '../../interfaces/ProjectInterface';
 
 const ProjectMain = ({
   projects,
   projNumber,
-  changeIndex
+  changeIndex,
+  language
 }: {
   projects: ProjectInterface[],
   projNumber: number,
-  changeIndex: (index: number) => void
+  changeIndex: (index: number) => void,
+  language: string
 }) => {
-  const { id } = useParams();
-  const history = useNavigate();
-  let project: ProjectInterface | any = {};
-  let langProjects: ProjectInterface[] = [];
+  const [id, setId] = useState(0)
+  const [langProjects, setLangProjects] = useState(projects);
+  const [project, setProject] = useState(projects[id])
+  const [iconStyle, setIconStyle] = useState(iconStyles.githubIcon)
 
-  if (projects.length === 0) {
-    projects = getProjects;
-    project = projects.find(proj => proj.id === Number(id));
-    langProjects = projects.filter(pro => pro.language === project.language);
-    projNumber = langProjects.indexOf(project);
-    changeIndex(projNumber);
-  } else {
-    project = projects.find(proj => proj.id === Number(id));
-    langProjects = projects.filter(pro => pro.language === project.language);
-  }
+  useEffect(() => {
+    if (language === '') return
 
-  const projIndex = projNumber || langProjects.indexOf(project);
+    setLangProjects(projects.filter(proj => proj.language === language))
+    setId(0)
+  }, [language, projects])
+
+  useEffect(() => setProject(langProjects[id]), [id, langProjects])
+
+  // useEffect
+
+  // if (projects.length === 0) {
+  //   projects = getProjects;
+  //   setProject(projects.find(proj => proj.id === Number(id)) || projects[0]);
+  //   setLangProjects(projects.filter(pro => pro.language === project.language));
+  //   projNumber = langProjects.indexOf(project);
+  //   changeIndex(projNumber);
+  // } else {
+  //   setProject(projects.find(proj => proj.id === Number(id)) || projects[0]);
+  //   setLangProjects(projects.filter(pro => pro.language === project.language));
+  // }
+
+  const handleMouse = (style: any) => setIconStyle(style);
 
   const handleArrow = (value: number) => {
     if (value === langProjects.length) {
-      changeIndex(0);
-      history(`/project/${langProjects[0].id}`);
+      setId(0);
     } else if (value < 0) {
-      changeIndex(langProjects.length - 1);
-      history(`/project/${langProjects[langProjects.length - 1].id}`);
+      setId(langProjects.length - 1);
     } else {
-      changeIndex(value);
-      history(`/project/${langProjects[value].id}`);
+      setId(value);
     }
   };
 
+  if (project === undefined) return null
+
   return (
-    <div style={{ display: 'flex' }}>
+    <div style={styles.projContainer}>
       <input
         style={{ ...styles.arrowLeft, ...styles.arrows }}
         type="button"
-        onClick={() => handleArrow(Number(projIndex) - 1)}
+        onClick={() => handleArrow(id - 1)}
       />
       <div style={styles.container}>
         <h1 style={styles.title}>
@@ -59,26 +70,29 @@ const ProjectMain = ({
             target="_blank"
             rel="noopener noreferrer"
             style={styles.link}
-          >
-            {project.name}
-          </a>
+          >{project.name}</a>
           <p style={{ padding: '0 1rem' }}> - </p>
-          <NavbarIcon
-            link={project.repo}
-            styleGrey={styles.githubIcon}
-            styleHover={styles.githubIconHover}
-            big
-          />
+          <a href={project.repo} target="_blank" rel="noopener noreferrer">
+            <input
+              onMouseOver={() => handleMouse(iconStyles.githubIconHover)}
+              onMouseLeave={() => handleMouse(iconStyles.githubIcon)}
+              style={{ ...iconStyle, ...iconStyles.projectIcon }}
+              type="button"
+            />
+          </a>
         </h1>
         {project.description.map((paragraph: string) => (
           <p style={styles.description} key={paragraph}>{paragraph}</p>
         ))}
-        <img src={project.image} alt={project.name} style={styles.image} />
+        {project.iframe ?
+          <iframe title={project.name} src={project.iframe} style={styles.iframe} /> :
+          <img src={project.image} alt={project.name} style={styles.image} />
+        }
       </div>
       <input
         style={{ ...styles.arrowRight, ...styles.arrows }}
         type="button"
-        onClick={() => handleArrow(projIndex + 1)}
+        onClick={() => handleArrow(id + 1)}
       />
     </div>
   );

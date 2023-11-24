@@ -47,7 +47,7 @@ const HeaderStyles: HeaderStylesInterface = ({
     alignItems: 'center'
   },
   hamburguerIcon: {
-    height: '60%',
+    height: '50%',
     cursor: 'pointer'
   }
 });

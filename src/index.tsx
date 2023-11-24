@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 
-import App from './components/App';
+import Main from './containers/Main';
 import reportWebVitals from './reportWebVitals';
 
 import projectsReducer from './slicers/projectsSlicer'
@@ -24,7 +24,7 @@ const root = createRoot(container!);
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <Main />
     </Provider>
   </React.StrictMode>
 );

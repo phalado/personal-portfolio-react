@@ -5,5 +5,6 @@ export default interface ProjectInterface {
   live: string;
   repo: string;
   description: string[];
-  image: string
+  image: string;
+  iframe?: string
 }

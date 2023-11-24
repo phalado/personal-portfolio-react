@@ -3,25 +3,28 @@ import { ProjectHeaderStylesInterface } from "../interfaces/StylesInterface";
 const ProjectHeaderStyles: ProjectHeaderStylesInterface = ({
   container: {
     color: '#333',
-    width: '100%',
-    maxHeight: '20%',
+    width: '15%',
+    height: '90%',
     margin: 0,
     borderRadius: '10px',
     display: 'flex',
     placeContent: 'space-around',
-    background: 'transparent',
-    flexWrap: 'wrap',
+    alignItems: 'center',
+    backgroundColor: 'white',
+    marginLeft: '4%',
+    flexDirection: 'column'
   },
   button: {
     border: 'none',
-    height: '5rem',
+    height: '4rem',
     background: 'transparent',
     borderRadius: 10,
-    margin: 20,
     cursor: 'pointer',
+    maxWidth: '90%',
   },
   image: {
     height: '100%',
+    width: '100%'
   },
 });
 

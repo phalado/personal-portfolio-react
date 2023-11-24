@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
-import ProjectMain from '../components/Project/ProjectMain';
-import StateInterface from '../interfaces/StateInterface';
+import ProjectMain from './ProjectMain';
+import StateInterface from '../../interfaces/StateInterface';
 
-import { changeIndex } from '../slicers/projNumberSlicer';
+import { changeIndex } from '../../slicers/projNumberSlicer';
 
 const mapStateToProps = (state: StateInterface) => ({
   projects: state.projects,

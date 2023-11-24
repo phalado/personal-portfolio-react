@@ -8,10 +8,16 @@ const ProjectStyles: ProjectStylesInterface = ({
     width: '90%',
     margin: '1rem auto',
     color: 'white',
+    overflow: 'overlay'
+  },
+  projContainer: {
+    display: 'flex',
+    height: '95%',
+    width: '78%'
   },
   title: {
     textAlign: 'center',
-    fontSize: '3rem',
+    fontSize: '2rem',
     fontWeight: 'bold',
     margin: 0,
     color: 'white',
@@ -23,8 +29,8 @@ const ProjectStyles: ProjectStylesInterface = ({
     color: 'inherit',
   },
   description: {
-    fontSize: '1.5rem',
-    margin: '0 5rem 2rem',
+    fontSize: '1.4rem',
+    margin: '0 3rem 1.5rem',
   },
   image: {
     maxWidth: '95%',
@@ -54,6 +60,10 @@ const ProjectStyles: ProjectStylesInterface = ({
   },
   arrowRight: {
     backgroundImage: "url('/contents/angle-right.svg')",
+  },
+  iframe: {
+    width: '80%',
+    height: '100%'
   },
 });
 

@@ -1,28 +1,19 @@
 import React from 'react';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
-import styles from '../../styles/Tabs';
 import About from './About';
+import Tabs from './Tabs';
+import { Container } from '@mui/material';
+import styles from '../../styles/Tabs';
+import ProjectPage from '../Project';
 
-const TabsContainer = () => {
+const TabsContainer = (props: any) => {
+  const { currentTab, setCurrentTab } = props;
+
   return (
-    <Tabs style={styles.container}>
-      <TabList style={styles.tabList}>
-        <Tab style={styles.tab}>About me</Tab>
-        <Tab style={styles.tab}>Projects</Tab>
-        <Tab style={styles.tab}>Professional Experience</Tab>
-      </TabList>
-
-      <TabPanel style={styles.tabPanel}>
-        <About />
-      </TabPanel>
-      <TabPanel style={styles.tabPanel}>
-        <h2>Any content 2</h2>
-      </TabPanel>
-      <TabPanel style={styles.tabPanel}>
-        <h2>Any content 3</h2>
-      </TabPanel>
-    </Tabs>
+    <Container style={styles.container}>
+      <Tabs currentTab={currentTab} setCurrentTab={setCurrentTab}  />
+      {currentTab === 'about' && <About />}
+      {currentTab === 'proj' && <ProjectPage />}
+    </Container>
   )
 }
 
