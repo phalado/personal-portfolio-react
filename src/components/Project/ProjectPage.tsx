@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ProjectMain from './ProjectMainContainer';
+import ProjectMain from './ProjectMain';
 import ProjectIcons from './ProjectIcons';
 
 const ProjectPage = () => {

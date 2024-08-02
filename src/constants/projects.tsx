@@ -111,18 +111,6 @@ const projects = [
     image: '',
   },
   {
-    id: 10,
-    name: 'Checkers Online',
-    language: 'javascript',
-    live: 'https://checkers-online-phalado.herokuapp.com/',
-    repo: 'https://github.com/phalado/Checkers-Online',
-    description: [
-      'This is a personal project. My objective was to test my skills doing an online, multiplayer game.',
-      'In this project I built a CHeckers game using JavaScripts framework Phaser 3, a "fast, free and fun open-source framework for Canvas and WebGL powered browser games".',
-    ],
-    image: '../contents/projects/checkers-online.png',
-  },
-  {
     id: 11,
     name: 'Checkers Online',
     language: 'javascript',

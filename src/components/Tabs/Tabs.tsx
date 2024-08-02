@@ -38,6 +38,14 @@ const Tabs = (props: any) => {
         align='center'
         variant='subtitle1'
         style={{ ...styles.tab, backgroundColor: '#2d3950' }}
+        onClick={() => setCurrentTab('articles')}
+      >
+        Articles
+      </Typography>
+      <Typography
+        align='center'
+        variant='subtitle1'
+        style={{ ...styles.tab, backgroundColor: '#000' }}
         onClick={() => setCurrentTab('contact')}
       >
         Contact

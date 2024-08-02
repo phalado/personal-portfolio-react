@@ -31,6 +31,9 @@ const About = () => {
         GraphQL, Sidekiq, MSQL, Pair Programming, Agile Methodologies, Git, Webpack, Heroku,
         Netlify, and Amazon S3.
       </p>
+      {/* <div style={styles.projects}>
+        <h1 style={styles.title}>Hot projects:</h1>
+      </div> */}
     </Container>
   )
 }

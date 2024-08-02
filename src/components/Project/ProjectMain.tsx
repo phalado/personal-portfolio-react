@@ -1,20 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import getProjects from '../../constants/projects';
+import React, { useContext, useEffect, useState } from 'react';
 import styles from '../../styles/Project';
 import iconStyles from '../../styles/Icon';
-import ProjectInterface from '../../interfaces/ProjectInterface';
+import { AppContext } from '../AppContext';
 
-const ProjectMain = ({
-  projects,
-  projNumber,
-  changeIndex,
-  language
-}: {
-  projects: ProjectInterface[],
-  projNumber: number,
-  changeIndex: (index: number) => void,
-  language: string
-}) => {
+const ProjectMain = ({ language }: { language: string }) => {
+  const { projects } = useContext(AppContext)
+
   const [id, setId] = useState(0)
   const [langProjects, setLangProjects] = useState(projects);
   const [project, setProject] = useState(projects[id])
@@ -28,19 +19,6 @@ const ProjectMain = ({
   }, [language, projects])
 
   useEffect(() => setProject(langProjects[id]), [id, langProjects])
-
-  // useEffect
-
-  // if (projects.length === 0) {
-  //   projects = getProjects;
-  //   setProject(projects.find(proj => proj.id === Number(id)) || projects[0]);
-  //   setLangProjects(projects.filter(pro => pro.language === project.language));
-  //   projNumber = langProjects.indexOf(project);
-  //   changeIndex(projNumber);
-  // } else {
-  //   setProject(projects.find(proj => proj.id === Number(id)) || projects[0]);
-  //   setLangProjects(projects.filter(pro => pro.language === project.language));
-  // }
 
   const handleMouse = (style: any) => setIconStyle(style);
 

@@ -98,4 +98,5 @@ export interface AboutStylesInterface {
   title: React.CSSProperties
   paragraphs: React.CSSProperties
   span: React.CSSProperties
+  projects: React.CSSProperties
 }

@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
-import { Paper } from '@mui/material';
+
 import Header from './Header/Header';
 import TabsContainer from './Tabs';
+import { AppProvider } from './AppContext';
+import { Paper } from '@mui/material';
+
 import styles from '../styles/App';
 
 const App = () => {
@@ -10,16 +13,19 @@ const App = () => {
     about: '#8ca4d4',
     exp: '#637aa6',
     proj: '#3e588c',
-    contact: "#2d3950"
+    articles: "#2d3950",
+    contact: "#000e23"
   }
 
   return (
-    <div style={styles.container}>
-      <Header />
-      <Paper elevation={10} style={{ ...styles.paper, backgroundColor: backgroundColor[currentTab] }}>
-        <TabsContainer currentTab={currentTab} setCurrentTab={setCurrentTab} />
-      </Paper>
-    </div>
+    <AppProvider>
+      <div style={styles.container}>
+        <Header />
+        <Paper elevation={10} style={{ ...styles.paper, backgroundColor: backgroundColor[currentTab] }}>
+          <TabsContainer currentTab={currentTab} setCurrentTab={setCurrentTab} />
+        </Paper>
+      </div>
+    </AppProvider>
   );
 }
 

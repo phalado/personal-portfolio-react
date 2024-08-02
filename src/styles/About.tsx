@@ -23,6 +23,9 @@ const AboutStyles: AboutStylesInterface = ({
   span: {
     color: 'black',
     fontWeight: 'bold'
+  },
+  projects: {
+    display: '"flex"'
   }
 });
 
