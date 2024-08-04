@@ -22,7 +22,9 @@ const HeaderStyles: HeaderStylesInterface = ({
   name: {
     color: 'white',
     width: '200px',
-    textAlign: 'center'
+    textAlign: 'center',
+    fontSize: '28px',
+    paddingTop: '10px'
   },
   titleContainer: {
     display: 'flex',
@@ -32,7 +34,7 @@ const HeaderStyles: HeaderStylesInterface = ({
   },
   titleTexts: {
     color: 'white',
-    margin: 0
+    margin: 0,
   },
   iconContainer: {
     display: 'flex',

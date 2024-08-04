@@ -12,7 +12,7 @@ const Header = () => {
       <img src={images.phaladoTechIcon} style={styles.image} alt='Phalado Tech Icon' />
       <h2 style={styles.name}>Raphael Pereira Cordeiro</h2>
       <div style={styles.titleContainer}>
-        <h1 style={styles.titleTexts}>Full-Stack Developer</h1>
+        <h1 style={{ ...styles.titleTexts, paddingTop: '10px' }}>Full-Stack Developer</h1>
         <h1 style={styles.titleTexts}>Rails - React - Node.js</h1>
       </div>
       <div style={styles.iconContainer}>

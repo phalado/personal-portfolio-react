@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import Header from './Header/Header';
 import TabsContainer from './Tabs';
@@ -6,6 +6,7 @@ import { AppProvider } from './AppContext';
 import { Paper } from '@mui/material';
 
 import styles from '../styles/App';
+import '../App.css'
 
 const App = () => {
   const [currentTab, setCurrentTab] = useState('about')

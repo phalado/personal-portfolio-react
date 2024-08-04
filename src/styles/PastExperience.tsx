@@ -14,6 +14,7 @@ const PastExperienceStyle: { [key: string]: CSSProperties } = ({
     margin: 0,
     paddingTop: '1rem',
     paddingBottom: '2rem',
+    fontFamily: 'Tajawal-Regular'
   },
   paragraphs: {
     paddingBottom: '1.5rem',
