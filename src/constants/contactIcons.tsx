@@ -1,28 +1,28 @@
 import Links from "./Links";
 
-import styles from '../styles/Icon';
+import styles from "../styles/IconStyles";
 
 const contactIcons: any = {
   linkedin: {
     link: Links.linkedin,
     styleIcon: styles.linkedinIcon,
-    styleHover: styles.linkedinIconHover
+    styleHover: styles.linkedinIconHover,
   },
   github: {
     link: Links.github,
     styleIcon: styles.githubIcon,
-    styleHover: styles.githubIconHover
+    styleHover: styles.githubIconHover,
   },
   twitter: {
     link: Links.twitter,
     styleIcon: styles.twitterIcon,
-    styleHover: styles.twitterIconHover
+    styleHover: styles.twitterIconHover,
   },
   medium: {
     link: Links.medium,
     styleIcon: styles.mediumIcon,
-    styleHover: styles.mediumIconHover
+    styleHover: styles.mediumIconHover,
   },
-}
+};
 
 export default contactIcons;

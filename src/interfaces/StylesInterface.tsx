@@ -100,3 +100,7 @@ export interface AboutStylesInterface {
   span: React.CSSProperties
   projects: React.CSSProperties
 }
+
+export default interface StylesInterface {
+  [key: string]: React.CSSProperties
+}

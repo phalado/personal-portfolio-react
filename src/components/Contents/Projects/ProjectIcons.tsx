@@ -1,7 +1,6 @@
-import React from 'react';
-import { Paper } from '@mui/material';
-import filterButtonsArray from '../../constants/filterButtons';
-import styles from '../../styles/ProjectHeader';
+import { Paper } from "@mui/material";
+import filterButtonsArray from "../../../constants/filterButtons";
+import styles from "../../../styles/ProjectHeaderStyles";
 
 const ProjectIcons = (props: { setLanguage: (lang: string) => void }) => {
   const { setLanguage } = props;
@@ -19,7 +18,7 @@ const ProjectIcons = (props: { setLanguage: (lang: string) => void }) => {
         </button>
       ))}
     </Paper>
-  )
-}
+  );
+};
 
 export default ProjectIcons;
