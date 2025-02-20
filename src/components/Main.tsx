@@ -14,7 +14,7 @@ const Main = () => {
     { path: '/christian', element: <ChristianPage /> },
   ]);
 
-  return <RouterProvider router={router} />
+  return <RouterProvider router={router} />;
 };
 
 export default Main;

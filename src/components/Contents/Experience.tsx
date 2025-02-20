@@ -1,19 +1,14 @@
-import { useEffect, useState } from "react";
-import { Container } from "@mui/system";
-import getExperience from "../../constants/pastExperiences";
-import styles from "../../styles/PastExperienceStyles";
+import { useEffect, useState } from 'react';
+import { Container } from '@mui/system';
+import getExperience from '../../constants/pastExperiences';
+import styles from '../../styles/PastExperienceStyles';
 
 const PastExperiences = () => {
   const experience = getExperience;
   const [currentId, setCurrentId] = useState(0);
-  const [currentExperience, setCurrentExperience] = useState(
-    experience[currentId]
-  );
+  const [currentExperience, setCurrentExperience] = useState(experience[currentId]);
 
-  useEffect(
-    () => setCurrentExperience(experience[currentId]),
-    [currentId, experience]
-  );
+  useEffect(() => setCurrentExperience(experience[currentId]), [currentId, experience]);
 
   const handleArrow = (id: number) => {
     setCurrentId(id);
@@ -40,7 +35,7 @@ const PastExperiences = () => {
       <div style={styles.leftColumn}>
         <h2 style={styles.companyLink}>
           <a
-            style={{ color: "black" }}
+            style={{ color: 'black' }}
             href={currentExperience.website}
             target="_blank"
             rel="noreferrer"

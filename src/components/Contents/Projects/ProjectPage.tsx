@@ -1,10 +1,10 @@
-import { useState } from "react";
-import ProjectMain from "./ProjectMain";
-import ProjectIcons from "./ProjectIcons";
-import styles from "../../../styles/ProjectStyles";
+import { useState } from 'react';
+import ProjectMain from './ProjectMain';
+import ProjectIcons from './ProjectIcons';
+import styles from '../../../styles/ProjectStyles';
 
 const ProjectPage = () => {
-  const [language, setLanguage] = useState("");
+  const [language, setLanguage] = useState('');
 
   return (
     <>

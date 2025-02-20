@@ -1,17 +1,17 @@
-import { ReactNode, useState } from "react";
-import { AppProvider } from "./AppContext";
-import ContentModal from "./ContentModal";
-import images from "../constants/images";
+import { ReactNode, useState } from 'react';
+import { AppProvider } from './AppContext';
+import ContentModal from './ContentModal';
+import images from '../constants/images';
 
-import About from "./Contents/About";
-import PastExperiences from "./Contents/Experience";
-import Projects from "./Contents/Projects";
-import Articles from "./Contents/Articles";
-import Contact from "./Contents/Contact";
-import HomePageLinks from "./HomePageLinks";
+import About from './Contents/About';
+import PastExperiences from './Contents/Experience';
+import Projects from './Contents/Projects';
+import Articles from './Contents/Articles';
+import Contact from './Contents/Contact';
+import HomePageLinks from './HomePageLinks';
 
-import styles from "../styles/AppStyles";
-import "../App.css";
+import styles from '../styles/AppStyles';
+import '../App.css';
 
 const App = () => {
   const [isOpenContentModal, setIsOpenContentModal] = useState(false);
@@ -25,11 +25,7 @@ const App = () => {
       <div style={styles.container}>
         <div style={styles.subContainer}>
           <div style={styles.top}>
-            <img
-              src={images.phaladoTechIcon}
-              style={styles.icon}
-              alt="Phalado Tech Icon"
-            />
+            <img src={images.phaladoTechIcon} style={styles.icon} alt="Phalado Tech Icon" />
             <div style={styles.titlesContainer}>
               <h1 style={styles.name}>Raphael Cordeiro</h1>
               <h2 style={styles.title}>Full-Stack Developer</h2>
@@ -84,11 +80,7 @@ const App = () => {
           </div>
         </div>
       </div>
-      <ContentModal
-        isOpenModal={isOpenContentModal}
-        closeModal={closeContentModal}
-        big={bigModal}
-      >
+      <ContentModal isOpenModal={isOpenContentModal} closeModal={closeContentModal} big={bigModal}>
         {modalContent}
       </ContentModal>
     </AppProvider>

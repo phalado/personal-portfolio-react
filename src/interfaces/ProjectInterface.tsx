@@ -6,5 +6,5 @@ export default interface ProjectInterface {
   repo: string;
   description: string[];
   image: string;
-  iframe?: string
+  iframe?: string;
 }

@@ -1,29 +1,29 @@
 export interface HeaderStylesInterface {
-  container: React.CSSProperties
-  image: React.CSSProperties
-  name: React.CSSProperties
-  titleContainer: React.CSSProperties
-  titleTexts: React.CSSProperties
-  iconContainer: React.CSSProperties
-  hamburguerIconContainer: React.CSSProperties
-  hamburguerIcon: React.CSSProperties
+  container: React.CSSProperties;
+  image: React.CSSProperties;
+  name: React.CSSProperties;
+  titleContainer: React.CSSProperties;
+  titleTexts: React.CSSProperties;
+  iconContainer: React.CSSProperties;
+  hamburguerIconContainer: React.CSSProperties;
+  hamburguerIcon: React.CSSProperties;
 }
 
 export interface IconStyleInterface {
-  linkedinIcon: React.CSSProperties
-  linkedinIconHover: React.CSSProperties
-  githubIcon: React.CSSProperties
-  githubIconHover: React.CSSProperties
-  twitterIcon: React.CSSProperties
-  twitterIconHover: React.CSSProperties
-  mediumIcon: React.CSSProperties
-  mediumIconHover: React.CSSProperties
-  icon: React.CSSProperties
+  linkedinIcon: React.CSSProperties;
+  linkedinIconHover: React.CSSProperties;
+  githubIcon: React.CSSProperties;
+  githubIconHover: React.CSSProperties;
+  twitterIcon: React.CSSProperties;
+  twitterIconHover: React.CSSProperties;
+  mediumIcon: React.CSSProperties;
+  mediumIconHover: React.CSSProperties;
+  icon: React.CSSProperties;
 }
 
 export interface MainStylesInterface {
   container: React.CSSProperties;
-  containerSml: React.CSSProperties
+  containerSml: React.CSSProperties;
 }
 
 export interface HomeHeaderStylesInterface {
@@ -84,23 +84,23 @@ export interface NavbarStylesInterface {
 }
 
 export interface FooterStylesInterface {
-  container: React.CSSProperties
+  container: React.CSSProperties;
 }
 
 export interface TabsStylesInterface {
-  container: React.CSSProperties
-  tabList: React.CSSProperties
-  tab: React.CSSProperties
+  container: React.CSSProperties;
+  tabList: React.CSSProperties;
+  tab: React.CSSProperties;
 }
 
 export interface AboutStylesInterface {
-  container: React.CSSProperties
-  title: React.CSSProperties
-  paragraphs: React.CSSProperties
-  span: React.CSSProperties
-  projects: React.CSSProperties
+  container: React.CSSProperties;
+  title: React.CSSProperties;
+  paragraphs: React.CSSProperties;
+  span: React.CSSProperties;
+  projects: React.CSSProperties;
 }
 
 export default interface StylesInterface {
-  [key: string]: React.CSSProperties
+  [key: string]: React.CSSProperties;
 }

@@ -1,4 +1,4 @@
-import ProjectInterface from "./ProjectInterface";
+import ProjectInterface from './ProjectInterface';
 
 export default interface StateInterface {
   projects: ProjectInterface[];

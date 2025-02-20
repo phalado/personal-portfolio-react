@@ -6,11 +6,11 @@ const projects = [
     live: 'https://starwars-spaceshooter.herokuapp.com/',
     repo: 'https://github.com/phalado/JS-Capstone',
     description: [
-      'Star Wars - Space Shooters is a game that I developed at JavaScript\'s Capstone Project.',
-      'This is an endless runner developed using Phaser 3 framework. Here you control Luke\'s X-Wing against some of the imperial ships. The goal is to destroy as many enemy ships as you can and score high. Maybe you can erase my name from the leader board, give it a try!',
+      "Star Wars - Space Shooters is a game that I developed at JavaScript's Capstone Project.",
+      "This is an endless runner developed using Phaser 3 framework. Here you control Luke's X-Wing against some of the imperial ships. The goal is to destroy as many enemy ships as you can and score high. Maybe you can erase my name from the leader board, give it a try!",
     ],
     image: '../contents/projects/sw-ss.png',
-    iframe: 'https://start-wars-shooter.netlify.app/'
+    iframe: 'https://start-wars-shooter.netlify.app/',
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const projects = [
     repo: 'https://github.com/phalado/Restaurant-page',
     description: [
       'The Restaurant page is a simple but elegant project done with JavaScript. There is no mouse in this restaurant.',
-      'It is Little Chef\'s restaurant page with a menu, some critics and a session for contact. It is not the most complex project in my portfolio but it is a good combination of a good idea and a nice design. Be sure that Emile is, clearly, a human.',
+      "It is Little Chef's restaurant page with a menu, some critics and a session for contact. It is not the most complex project in my portfolio but it is a good combination of a good idea and a nice design. Be sure that Emile is, clearly, a human.",
     ],
     image: '../contents/projects/rest-page.png',
   },
@@ -44,7 +44,7 @@ const projects = [
     live: 'https://sample-app-phalado.herokuapp.com/',
     repo: 'https://github.com/phalado/sample_app',
     description: [
-      'The Sample App is a social media done following the step-by-step of Michael Hartl\'s Ruby on Rails Tutorial.',
+      "The Sample App is a social media done following the step-by-step of Michael Hartl's Ruby on Rails Tutorial.",
       'Unlike the Facebook clone project, this one is more to what was the twitter in the past, where the posts are limited to 140 characters. It was a simple but amazing project.',
     ],
     image: '../contents/projects/sampleapp.png',
@@ -58,7 +58,7 @@ const projects = [
     description: [
       'Building with Responsive Design was a collaborative project at Microverse, where the goal was to clone The Next Web website.',
       'This was the first responsive project and there is no turning back after this point.',
-      'Click on the title to see a live version and don\'t forget to test its responsiveness.',
+      "Click on the title to see a live version and don't forget to test its responsiveness.",
     ],
     image: '../contents/projects/tnw.png',
   },
@@ -69,7 +69,7 @@ const projects = [
     live: 'https://rawcdn.githack.com/phalado/Using-Bootstrap/7bf89d9a69cfd69381abc181f5f543d38045c23d/index.html',
     repo: 'https://github.com/phalado/Using-Bootstrap',
     description: [
-      'Using Bootstrap was one of Microverse\'s solo project and one of the funniest ones.',
+      "Using Bootstrap was one of Microverse's solo project and one of the funniest ones.",
       'The goal here was to use the framework Bootstrap to clone the Newsweek website making a responsive page.',
     ],
     image: '../contents/projects/bootstrap.png',
@@ -118,9 +118,9 @@ const projects = [
     repo: 'https://github.com/phalado/Checkers-Online',
     description: [
       'This is a personal project. My goal was to test my skills by doing an online, multiplayer game.',
-      'In this project, I built a checker game using JavaScript\'s framework Phaser 3.',
+      "In this project, I built a checker game using JavaScript's framework Phaser 3.",
       'This is a multiplayer-only game. One user has to create a game and pass to the second one the generated code.',
-      'The game\'s logic shows you the possible movements and recognizes when the game is over.',
+      "The game's logic shows you the possible movements and recognizes when the game is over.",
     ],
     image: '../contents/projects/checkers-online.png',
   },
@@ -132,7 +132,7 @@ const projects = [
     repo: 'https://github.com/phalado/final-capstone',
     description: [
       'This was my final capstone project for Microverse and the most complete one.',
-      'The project\'s goal was to create a book of appointment. I chose to create a dragon flying academy based on the characters of How to Train Your Dragon.',
+      "The project's goal was to create a book of appointment. I chose to create a dragon flying academy based on the characters of How to Train Your Dragon.",
       'The back-end is a RESTful API done with Ruby on Rails and the front-end was done with React and Redux.',
     ],
     image: '../contents/projects/berk.png',
@@ -144,8 +144,8 @@ const projects = [
     live: 'https://batcomputer-copy.herokuapp.com/',
     repo: 'https://github.com/phalado/React-Redux-Capstone',
     description: [
-      'For this project, I hacked Batman\'s computer and got some data from the main heroes and villains. You can\'t be the Dark Knight if you are not prepared for each hero or villain.',
-      'This project\'s goal was to build a browsable list of items that you can filter and access to the details of one item. The list should be accessed from an API, so I chose the Superhero API and filtered it to store only the DC Comic\'s characters.',
+      "For this project, I hacked Batman's computer and got some data from the main heroes and villains. You can't be the Dark Knight if you are not prepared for each hero or villain.",
+      "This project's goal was to build a browsable list of items that you can filter and access to the details of one item. The list should be accessed from an API, so I chose the Superhero API and filtered it to store only the DC Comic's characters.",
       'I used React and Redux to divide the characters by affiliation, and alignment.',
     ],
     image: '../contents/projects/batcomputer.png',
@@ -170,7 +170,7 @@ const projects = [
     repo: 'https://github.com/phalado/mobileCalculator',
     description: [
       'A simple calculator for android and my first project done with React Native',
-      'There is no live-version for this project but you can download the apk clicking on the project\'s title.',
+      "There is no live-version for this project but you can download the apk clicking on the project's title.",
       'Try to divide by 0',
     ],
     image: '../contents/projects/mobile-calc.png',
@@ -186,7 +186,7 @@ const projects = [
       'Test it below - Try to divide by 0',
     ],
     image: '../contents/projects/calculator-typescript.png',
-    iframe: 'https://calculator-typescript.netlify.app/'
+    iframe: 'https://calculator-typescript.netlify.app/',
   },
   {
     id: 17,
@@ -195,13 +195,13 @@ const projects = [
     live: 'https://order-book-phalado.netlify.app/',
     repo: 'https://github.com/phalado/order_book',
     description: [
-      'An order book based on Binance\'s',
-      'The user is able to choose two assets. After that, a live stream from Binance\'s Websocket will show the lasts bids.',
-      'The assts\' bids and asks will be updated each second.',
-      'You can test it below.'
+      "An order book based on Binance's",
+      "The user is able to choose two assets. After that, a live stream from Binance's Websocket will show the lasts bids.",
+      "The assts' bids and asks will be updated each second.",
+      'You can test it below.',
     ],
     image: '',
-    iframe: 'https://order-book-phalado.netlify.app/'
+    iframe: 'https://order-book-phalado.netlify.app/',
   },
   {
     id: 18,
@@ -211,10 +211,10 @@ const projects = [
     repo: 'https://github.com/phalado/termo-consulta',
     description: [
       'A web app to help solving the Brazilian version of Wordle: Termo.',
-      'This application won\'t solve the puzzle for you. You still have to deduct the next steps. It only shows you the possible words for the answer.',
-      'This repo is the back end done using Ruby on Rails and Elasticsearch'
+      "This application won't solve the puzzle for you. You still have to deduct the next steps. It only shows you the possible words for the answer.",
+      'This repo is the back end done using Ruby on Rails and Elasticsearch',
     ],
-    image: '../contents/projects/termo-solver.png'
+    image: '../contents/projects/termo-solver.png',
   },
   {
     id: 19,
@@ -224,12 +224,12 @@ const projects = [
     repo: 'https://github.com/phalado/termo-consulta',
     description: [
       'A web app to help solving the Brazilian version of Wordle: Termo.',
-      'This application won\'t solve the puzzle for you. You still have to deduct the next steps. It only shows you the possible words for the answer.',
+      "This application won't solve the puzzle for you. You still have to deduct the next steps. It only shows you the possible words for the answer.",
       'This repo is the front end done using React and Typescript.',
-      'You can test it below.'
+      'You can test it below.',
     ],
     image: '../contents/projects/termo-solver.png',
-    iframe: 'https://termo-solver.netlify.app/'
+    iframe: 'https://termo-solver.netlify.app/',
   },
 ];
 

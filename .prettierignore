@@ -1,0 +1,11 @@
+# compiled output
+/tmp/
+/public/
+
+# dependencies
+/node_modules/
+/bin/
+
+# other
+/db/
+/log/

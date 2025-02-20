@@ -1,6 +1,6 @@
-import { useContext, useEffect, useState } from "react";
-import styles from "../../../styles/ProjectStyles";
-import { AppContext } from "../../AppContext";
+import { useContext, useEffect, useState } from 'react';
+import styles from '../../../styles/ProjectStyles';
+import { AppContext } from '../../AppContext';
 
 const ProjectMain = ({ language }: { language: string }) => {
   const { projects } = useContext(AppContext);
@@ -14,7 +14,7 @@ const ProjectMain = ({ language }: { language: string }) => {
   });
 
   useEffect(() => {
-    if (language === "") return;
+    if (language === '') return;
 
     setLangProjects(projects.filter((proj) => proj.language === language));
     setId(0);
@@ -43,20 +43,15 @@ const ProjectMain = ({ language }: { language: string }) => {
       />
       <div style={styles.container}>
         <h1 style={styles.title}>
-          <a
-            href={project.live}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={styles.link}
-          >
+          <a href={project.live} target="_blank" rel="noopener noreferrer" style={styles.link}>
             {project.name}
           </a>
-          <p style={{ padding: "0 1rem" }}> - </p>
+          <p style={{ padding: '0 1rem' }}> - </p>
           <a
             href={project.repo}
             target="_blank"
             rel="noopener noreferrer"
-            style={{ paddingBottom: "12px" }}
+            style={{ paddingBottom: '12px' }}
           >
             <input
               onMouseOver={() =>
@@ -82,11 +77,7 @@ const ProjectMain = ({ language }: { language: string }) => {
           </p>
         ))}
         {project.iframe ? (
-          <iframe
-            title={project.name}
-            src={project.iframe}
-            style={styles.iframe}
-          />
+          <iframe title={project.name} src={project.iframe} style={styles.iframe} />
         ) : (
           <img src={project.image} alt={project.name} style={styles.image} />
         )}

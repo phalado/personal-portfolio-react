@@ -1,6 +1,6 @@
-import Links from "./Links";
+import Links from './Links';
 
-import styles from "../styles/IconStyles";
+import styles from '../styles/IconStyles';
 
 const contactIcons: any = {
   linkedin: {
