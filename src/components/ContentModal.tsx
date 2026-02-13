@@ -1,5 +1,6 @@
-import { ReactNode } from 'react';
+import { ReactNode, ComponentType, SVGProps } from 'react';
 import Modal from 'react-modal';
+import { MdOutlineClose } from 'react-icons/md';
 import styles from '../styles/ModalStyles';
 
 const ContentModal = (props: {
@@ -11,6 +12,7 @@ const ContentModal = (props: {
   const { isOpenModal, closeModal, children, big } = props;
 
   const modalStyle = big ? styles.bigModal : styles.modal;
+  const CloseIcon = MdOutlineClose as ComponentType<SVGProps<SVGSVGElement>>;
 
   return (
     <Modal
@@ -22,6 +24,7 @@ const ContentModal = (props: {
       style={{ content: modalStyle, overlay: styles.modalOverlay }}
     >
       {children}
+      <CloseIcon onClick={closeModal} style={styles.closeModalButton} />
     </Modal>
   );
 };
